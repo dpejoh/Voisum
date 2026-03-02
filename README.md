@@ -56,4 +56,4 @@ Kotlin, Min SDK 26 / Target SDK 34, Jetpack Compose for UI, Android View system 
 
 ## License
 
-Private project. All rights reserved.
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.
