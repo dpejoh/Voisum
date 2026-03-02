@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voisum</string>
+    <string name="accessibility_service_description">Voisum uses accessibility to detect text fields and inject polished text from your voice recordings.</string>
+    <string name="tagline">Voice to clean text, instantly.</string>
+    <string name="status_active">Active</string>
+    <string name="status_setup_required">Setup required</string>
+    <string name="checklist_accessibility">Accessibility Service</string>
+    <string name="checklist_overlay">Overlay Permission</string>
+    <string name="checklist_microphone">Microphone</string>
+    <string name="checklist_api_key">AI Provider and Key</string>
+    <string name="btn_test_it">Test It</string>
+    <string name="btn_history">History</string>
+    <string name="btn_settings">Settings</string>
+    <string name="error_no_connection">No connection. Check your internet and try again.</string>
+    <string name="error_invalid_api_key">API key rejected. Update it in Settings.</string>
+    <string name="error_quota_exceeded">Quota reached for %s. Try again later or switch providers.</string>
+    <string name="error_empty_response">No output returned. Try again.</string>
+    <string name="error_recording_too_large">Recording too large. Try a shorter message.</string>
+    <string name="error_transcription_unavailable">On-device transcription unavailable. Switch to Gemini or ChatGPT in Settings.</string>
+    <string name="clipboard_banner_text">Copied to clipboard — paste it now</string>
+    <string name="undo_banner_text">Undone</string>
+    <string name="warning_recording_ending">Recording will stop in 15 seconds</string>
+    <string name="settings_title">Settings</string>
+    <string name="section_ai_provider">AI Provider</string>
+    <string name="section_prompts">Prompts</string>
+    <string name="section_per_app_rules">Per-App Rules</string>
+    <string name="section_bubble_behavior">Bubble Behavior</string>
+    <string name="section_language_flags">Language Flag Mapping</string>
+    <string name="label_api_key">API Key</string>
+    <string name="btn_test_connection">Test connection</string>
+    <string name="label_enable_per_app">Enable per-app rules</string>
+    <string name="label_bubble_side">Side</string>
+    <string name="label_auto_dismiss">Auto-dismiss after paste</string>
+    <string name="label_max_duration">Max recording duration</string>
+    <string name="history_title">Recording History</string>
+    <string name="history_clear_all">Clear all</string>
+    <string name="history_clear_confirm">Delete all recording history?</string>
+    <string name="history_empty">No recordings yet</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_re_paste">Re-paste</string>
+    <string name="btn_retry">Retry</string>
+    <string name="btn_delete">Delete</string>
+    <string name="label_add_mapping">Add mapping</string>
+</resources>

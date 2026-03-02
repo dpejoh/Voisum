@@ -1,0 +1,49 @@
+<!--
+    IMPORTANT: Inflated from Application context — no theme available.
+    All colors MUST be hardcoded hex. Never use ?attr/ references.
+    See CRITICAL BUG FIX #1.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0303030"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/banner_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clipboard_banner_text"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Countdown progress bar -->
+        <ProgressBar
+            android:id="@+id/banner_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/banner_progress" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/banner_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:padding="8dp"
+        android:textColor="#64B5F6"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</FrameLayout>

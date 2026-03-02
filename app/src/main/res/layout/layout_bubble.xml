@@ -1,0 +1,125 @@
+<!--
+    IMPORTANT: This layout is inflated from Application context which has no theme.
+    All colors MUST be hardcoded hex values. Never use ?attr/ references here.
+    This is documented as a known requirement — see CRITICAL BUG FIX #1.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bubble_container"
+    android:layout_width="56dp"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Pulsing ripple layer (visible only during RECORDING) -->
+    <View
+        android:id="@+id/ripple_view"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ripple_circle"
+        android:alpha="0"
+        android:elevation="0dp" />
+
+    <!-- Progress ring (visible only during PROCESSING) -->
+    <ProgressBar
+        android:id="@+id/progress_ring"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <!-- Main bubble circle -->
+    <FrameLayout
+        android:id="@+id/bubble_circle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bubble_background"
+        android:elevation="6dp">
+
+        <!-- Mic icon (IDLE / RECORDING) -->
+        <ImageView
+            android:id="@+id/icon_mic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mic"
+            android:tint="#FFFFFF"
+            android:contentDescription="Record" />
+
+        <!-- Animated dots (PROCESSING) -->
+        <TextView
+            android:id="@+id/icon_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="···"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!-- Language flag (LANGUAGE_FLAG state) -->
+        <TextView
+            android:id="@+id/icon_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <!-- Undo icon (UNDO state) -->
+        <ImageView
+            android:id="@+id/icon_undo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_undo"
+            android:tint="#FFFFFF"
+            android:visibility="gone"
+            android:contentDescription="Undo" />
+
+        <!-- Preset color dot indicator -->
+        <View
+            android:id="@+id/preset_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/dot_circle"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- Duration timer chip (visible during RECORDING) -->
+    <TextView
+        android:id="@+id/duration_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/chip_background"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="0:00"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <!-- Preset label (visible in IDLE when non-default preset selected) -->
+    <TextView
+        android:id="@+id/preset_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="2dp"
+        android:textColor="#8E8E93"
+        android:textSize="9sp"
+        android:visibility="gone" />
+
+</FrameLayout>

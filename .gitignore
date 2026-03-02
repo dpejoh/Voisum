@@ -1,0 +1,85 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+**/build/
+
+# Local configuration file (contains SDK path, etc.)
+local.properties
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+*.iws
+*.ipr
+
+# Keystore files (uncomment if not needed in repo)
+# *.jks
+# *.keystore
+
+# Android Profiling
+*.hprof
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+**/.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Log files
+*.log
+
+# External native build
+.externalNativeBuild/
+.cxx/
+
+# Google Services (uncomment if using Firebase and file should stay private)
+# google-services.json
+
+# Captures (Android Studio memory/CPU captures)
+/captures
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Signing config
+/signing/
+
+# NDK crash logs
+crashlytics-build.properties
+
+# AI Instructions
+prompts.md
