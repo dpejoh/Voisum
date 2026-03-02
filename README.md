@@ -1,6 +1,6 @@
 # Voisum
 
-Voice to clean text. Record in supported social media apps on Android, get AI-polished output injected directly.
+Voisum turns voice into clean text inside supported social media apps on Android. If people are tired of long voice messages, or you need a specific format pasted directly into your app without switching apps, tap record and inject polished text in place.
 
 ## How It Works
 
